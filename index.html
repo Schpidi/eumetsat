@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title></title>
+
+        <meta name="description" content="EOX for EUMETSAT">
+        <meta name="author" content="Stephan Meissl">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/eox.css" id="theme">
+        <!-- Custom css -->
+        <link rel="stylesheet" href="custom.css">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                <!-- Cover page -->
+                <section>
+                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                        <h2 style="padding: 30px 20px 0 20px;">ngEO Extensions</h2>
+                        <p>EUMETSAT - Darmstadt - 2014-05-15</p>
+                        <a class="image" href="http://eox.at"><img style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/eox-logo.png" alt="EOX IT Services GmbH, Austria" title="EOX IT Services GmbH, Austria"/></a>
+                        <p><a href="mailto:office@eox.at">office@eox.at</a> <a href="https://twitter.com/eox_a">@eox_a</a></p>
+                        <p>Stephan Meißl <a href="mailto:stephan.meissl@eox.at">stephan.meissl@eox.at</a> <a href="https://twitter.com/Schpidi">@Schpidi</a></p>
+                        <br/>
+                        <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; margin:0 0 12px 0;" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><small>&nbsp;This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small></p>
+                        <aside class="notes">
+                            <p></p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_01_terrain_europe_l4.png" class="box">
+                        <h2>EOX Contributions to ngEO</h2>
+                        <ul>
+                            <li>Background &amp; Overlay Maps Service Operation<br/><a href="http://maps.eox.at"><img src="./images/eox-maps_small.png" alt="Browse Server Architektur" title="EOX::Maps"/></a></li>
+                            <li>Browse Server Implementation<br/><a href="http://schpidi.github.io/foss4g_2013_esa_browse_server/#/3"><img style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/browse_server_architecture_small.png" alt="Browse Server Architektur" title="Browse Server Architektur"/></a></li>
+                            <li>Multi-Mission Hosting &amp; Validation</li>
+                            <li>3D Browse Extension (V-Manip project)</li>
+                        </ul>
+                        <aside class="notes">
+                            <p>EOX::Maps</p>
+                            <ul>
+                                <li>Exclusively Open Data</li>
+                            </ul>
+                            <p>ngEO Browse Server - Architecture</p>
+                            <ul>
+                                <li>Exclusively based on Open Source Software like</li>
+                                <ul>
+                                    <li><a href="http://gdal.org">GDAL</a> for raster processing</li>
+                                    <li><a href="http://mapserver.org">MapServer</a> for OGC services support</li>
+                                    <li><a href="http://eoxserver.org">EOxServer</a> for Earth Observation extension</li>
+                                    <li><a href="http://mapserver.org/mapcache/index.html">MapCache</a> for extremely well performing WMTS and WMS access</li>
+                                </ul>
+                                <li>OGC's WMTS and WMS Standards</li>
+                                <li>Central configuration by ngEO Controller</li>
+                                <li>Data ingested by ngEO FEED</li>
+                                <li>Authentication using Shibboleth</li>
+                                <li>Authorization from ngEO Web Server</li>
+                                <li>Processing of raster data: geo-referencing, footprint, projection, alpha band, tiling, overviews, compression</li>
+                            </ul>
+                            <p>Task 5</p>
+                            <p>V-Manip</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch imagebox" src="./images/ngeo_1_1.png"/>
+                    </section>
+
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_1_2.png"/>
+                    </section>
+
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_1_3.png"/>
+                    </section>
+
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_2_1.png"/>
+                    </section>
+
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_2_2.png"/>
+                    </section>
+
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_2_3.png"/>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="images/map_03_terrain_europe_l6.png" class="box">
+                        <img class="stretch" src="./images/v-manip_start.png"/>
+                        <aside class="notes">
+                            <p>V-Manip client right after start</p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_03_terrain_europe_l6.png" class="box">
+                        <img class="stretch" src="./images/v-manip_selection-tools.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="images/map_04_terrain_darmstadt_l7.png" class="box">
+                        <img class="stretch" src="./images/v-manip_curtain_1.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_04_terrain_darmstadt_l7.png" class="box">
+                        <img class="stretch" src="./images/v-manip_curtain_2.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_04_terrain_darmstadt_l7.png" class="box">
+                        <img class="stretch" src="./images/v-manip_curtain_3.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="images/map_05_terrain_darmstadt_l8.png" class="box">
+                        <img class="stretch" src="./images/v-manip_analytics_1.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_05_terrain_darmstadt_l8.png" class="box">
+                        <img class="stretch" src="./images/v-manip_analytics_2.png"/>
+                        <aside class="notes">
+                            <p>Near - and middle range infrared values to detect vegetation</p>
+                            <p>Blue dot at lake: constant values</p>
+                            <p>Orange dot at field: varying values due to growth</p>
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_05_terrain_darmstadt_l8.png" class="box">
+                        <img class="stretch" src="./images/v-manip_analytics_3.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_05_terrain_darmstadt_l8.png" class="box">
+                        <img class="stretch" src="./images/v-manip_box_viewer.png"/>
+                        <aside class="notes">
+                            <p>Timeslider: currently visible data; metadata; zoom to data;</p>
+                            <p>3D Box Viewer</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="images/map_06_terrain_darmstadt_l9.png" class="box">
+                        <img class="stretch" src="./images/v-manip_slice_viewer.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <!-- TODO
+                        V-Manip FSC polygon download
+                        DREAM Jordan over time; Capian sea bounding box problem
+                        Cryoland daily FSC since end of 2000 -> EO-WCS
+                    -->
+
+                    <section data-background="images/map_07_terrain_darmstadt_l10.png" class="box">
+                        <img class="stretch" src="./images/v-manip_tutorial.png"/>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+
+                    <section data-background="images/map_08_terrain_darmstadt_l11.png" class="box">
+                        <img class="stretch" src="./images/dream_timeline.png"/>
+                    </section>
+                </section>
+
+                <section data-background="images/map_09_terrain_darmstadt_l12.png" class="box">
+                    <h2 style="padding: 30px 20px 0 20px;">ngEO Extensions</h2>
+                    <p>EUMETSAT - Darmstadt - 2014-05-15</p>
+                    <a class="image" href="http://eox.at"><img style="background-color:rgba(255, 255, 255, 0); box-shadow:0 0 0;" src="./images/eox-logo.png" alt="EOX IT Services GmbH, Austria" title="EOX IT Services GmbH, Austria"/></a>
+                    <p><a href="mailto:office@eox.at">office@eox.at</a> <a href="https://twitter.com/eox_a">@eox_a</a></p>
+                    <p>Stephan Meißl <a href="mailto:stephan.meissl@eox.at">stephan.meissl@eox.at</a> <a href="https://twitter.com/Schpidi">@Schpidi</a></p>
+                    <br/>
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; margin:0 0 12px 0;" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a><small>&nbsp;This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</small></p>
+                    <p><a href="http://esa.int"><img style="border-width:0; margin:-15px 0; box-shadow:0 0 0;" src="./images/esa-logo.png" alt="European Space Agency - ESA" title="European Space Agency - ESA"/></a> Thanks to ESA for supporting Open Source</p>
+                    <aside class="notes">
+                        <p>Many thanks for your attention.</p>
+                    </aside>
+                </section>
+
+<!--
+                <section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_3_start.png"/>
+                        <aside class="notes">
+                            <p>ngEO client right after start</p>
+                        </aside>
+                    </section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_4_suche.png"/>
+                        <aside class="notes">
+                            <p>Search</p>
+                        </aside>
+                    </section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_5_suche_detail.png"/>
+                        <aside class="notes">
+                            <p>Search Detail</p>
+                        </aside>
+                    </section>
+                    <section data-background="images/map_02_terrain_europe_l5.png" class="box">
+                        <img class="stretch" src="./images/ngeo_6_3d.png"/>
+                        <aside class="notes">
+                            <p>3D</p>
+                        </aside>
+                    </section>
+                </section>
+-->
+
+            </div>
+
+        </div>
+
+        <script src="reveal.js/lib/js/head.min.js"></script>
+        <script src="reveal.js/js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                keyboard: true,
+                touch: true,
+                overview: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
