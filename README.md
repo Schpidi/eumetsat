@@ -47,4 +47,6 @@ vi README.md
 vi LICENSE
 git add README.md LICENSE
 git commit -m "Adding readme and license."
+
+git push -u origin gh-pages
 ```
