@@ -4,7 +4,8 @@ Presentation for EUMETSAT by EOX 20140515
 
 ## Running presentation
 
-Serve presentation locally.
+Point your browser to the [online 
+presentation](http://schpidi.github.io/eumetsat) or serve it locally.
 
 ```bash
 git clone 
